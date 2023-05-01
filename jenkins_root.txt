@@ -1,0 +1,14 @@
+git remote add 
+git init
+git add filename
+git commit -m "first commit"
+git remote add 
+git push kops master
+
+docker login
+
+kubectl get pod
+
+chown -R root:root /var/lib/jenkins
+chown -R root:root /var/cache/jenkins
+chown -R root:root /var/log/jenkins

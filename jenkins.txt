@@ -1,0 +1,32 @@
+Jenkins -> plugin
+
+-job
+- queuing of jobs (upstream & downstream job)
+
+Trigger
+Manual trigger
+Time based?periodic trigger
+Remote trigger
+Action based
+
+Tomcat
+
+webapps - deploy war file here
+conf    - tomcat port no change
+bin     - tomcat start/start
+
+Jenkins 
+/var/lib/jenkins
+/opt/tomcat
+/etc/default
+
+Tomcat user creations
+In tomcat-user.xml [ under /opt/apache-tomcat-9/conf]
+
+  <role rolename="manager-script"/>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-status"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <user username="admin" password="1234" roles="manager-gui,manager-status,manager-script,manager-jmx"/>
+  <user username="deployer" password="deployer" roles="manager-script"/>
